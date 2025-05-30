@@ -43,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: _transactions.length,
         itemBuilder: (ctx, i) {
           final tx = _transactions[i];
+          //add header
           return ListTile(
             title: Text(tx.title),
             subtitle: Text('${tx.category} • ${DateFormat('h:mm a - MMM d, yyyy').format(tx.date)}',),
